@@ -24,3 +24,5 @@ At its heart, Repository Science emphasizes "Consolidation Effectiveness".  Give
 - NISOの2008年の勧告の改訂に向けた活動「最初の勧告の公表以来、出版の実践は急速に変化している。例えば、プレプリントは多くの分野で出版形態としての重要性を増しており、出版者も研究の継続性を保つための新しい方法を模索するようになっている。論文のすべてのバージョンは重要であり、引用可能となっているため、単一の「記録のバージョン、VoR」という概念はあまり意味を持たなくなっている」[report](https://www.niso.org/sites/default/files/2017-08/RP-8-2008.pdf)
 
 ![Screenshot 2023-07-29 at 0 07 55](https://github.com/CollectiveReview/repository-science/assets/94701070/527c22f4-0788-4eac-92fd-82192f0b9abe)
+
+[The UK Scholarly Communication Licence: Attempting to Cut through the Gordian Knot of the Complexities of Funder Mandates, Publisher Embargoes and Researcher Caution in Achieving Open Access](https://www.mdpi.com/2304-6775/6/3/31)
