@@ -1,4 +1,10 @@
 # Repository Science
+## What repository science is
+The aim of projects-based science, also referred to as repository science - if we follow the idea of ditributed development platform - is "consolidation effectiveness". Given that numerous research projects are essentially enhancements in the efficiency or accuracy of prior studies, it's important to integrate these projects into a single, cohesive context and body of knowledge.  This approach allows for easier understanding and avoids the clutter of individual manuscripts. In this context, the emphasis is placed on the [Record of Versions](https://rcos.nii.ac.jp/diary/2022/03/20220304-1/), as opposed to the traditional [version of record](https://scholarlykitchen.sspnet.org/2022/02/14/the-state-of-the-version-of-record/). 
+
+## What repository science is not
+Repository Science is not [opendata science](https://rcos.nii.ac.jp/miho/2016/11/20161102/).
+Data transparencey is not the focus here.
 
 ## Current projects of repository science
 - [Open Science Framework](https://www.cos.io/) - 
@@ -12,11 +18,6 @@
 - [OpenScience]
 - [OpenReview]
 - [preprint servers]
-
-Repository Science is not [opendata science](https://rcos.nii.ac.jp/miho/2016/11/20161102/).
-Data transparencey is not the focus here.
-
-At its heart, Repository Science emphasizes "Consolidation Effectiveness".  Given that numerous research projects are essentially enhancements in the efficiency or accuracy of prior studies, it's important to integrate these projects into a single, cohesive context and body of knowledge.  This approach allows for easier understanding and avoids the clutter of individual manuscripts. In this context, the emphasis is placed on the [Record of Versions](https://rcos.nii.ac.jp/diary/2022/03/20220304-1/), as opposed to the traditional [version of record](https://scholarlykitchen.sspnet.org/2022/02/14/the-state-of-the-version-of-record/). 
 
 ### RoVに関連した議論
 - オープンアクセスリポジトリ連合（COAR）「VoRは、研究者がプレプリントを素早く共有し、同僚研究者同士がオープンにレビューやコメントを交換し、論文が継続的に更新、修正、拡張されるウェブ対応のダイナミックな環境では、無用の長物となっています。印刷物の時代に培われた、Version of Record（記録のバージョン）という時代遅れの概念から脱却する時が来ているのです」
