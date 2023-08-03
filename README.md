@@ -2,9 +2,16 @@
 ## What repository science is
 The aim of projects-based science, also referred to as repository science - if we follow the idea of ditributed development platform - is "consolidation effectiveness". Given that numerous research projects are essentially enhancements in the efficiency or accuracy of prior studies, it's important to integrate these projects into a single, cohesive context and body of knowledge.  This approach allows for easier understanding and avoids the clutter of individual manuscripts. In this context, the emphasis is placed on the [Record of Versions](https://rcos.nii.ac.jp/diary/2022/03/20220304-1/), as opposed to the traditional [version of record](https://scholarlykitchen.sspnet.org/2022/02/14/the-state-of-the-version-of-record/). 
 
+The principles of repository scinece
+- **Contribution driven** - any public or private project is made of many small contributions pushed by researchers. 
+- **Universal citation** - repository can accept any format of data, and every citation is expressed via doi. Citaions are the dependency of the projects. Each citation is a link and points the single source of truth.
+- **Collective review** - the validity and impact of a project is measured by how many other projects accept it. We don't need to rely on small number of busy researchers.
+Repository science offers seamless workflow to researchers from ideating through experimenting to publishing because you can create a repository on your idea, experimental datas and references are contributed, and make this public for publishment.
+Every time you falsify your previous hypothesis, the record of version counts.
+
 ## What repository science is not
 Repository Science is not [opendata science](https://rcos.nii.ac.jp/miho/2016/11/20161102/).
-Data transparencey is not the focus here.
+Data transparencey is one of the targets of repository science, but is not the means of it.
 
 ## Current projects of repository science
 - [Open Science Framework](https://www.cos.io/) - 
