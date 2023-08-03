@@ -6,6 +6,7 @@ The principles of repository scinece
 - **Contribution driven** - any public or private project is made of many small contributions pushed by researchers. 
 - **Universal citation** - repository can accept any format of data, and every citation is expressed via doi. Citaions are the dependency of the projects. Each citation is a link and points the single source of truth.
 - **Collective review** - the validity and impact of a project is measured by how many other projects accept it. We don't need to rely on small number of busy researchers.
+
 Repository science offers seamless workflow to researchers from ideating through experimenting to publishing because you can create a repository on your idea, experimental datas and references are contributed, and make this public for publishment.
 Every time you falsify your previous hypothesis, the record of version counts.
 
