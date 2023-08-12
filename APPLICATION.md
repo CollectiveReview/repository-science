@@ -1,10 +1,10 @@
 # what is this document for?
-This proposal of repository science consists of three documents.
-- Problem（学術の現状の課題=前提）
-- Construct (解決策を概念的に提示したもの)
-- **Application（実装上の提案）** 👈
+This proposal of repository science consists of three components.
 
-This document is to describe about Application proposal.
+- Problem Statement （学術の現状の課題=前提）
+- Solution Concept (解決策を概念的に提示したもの) 
+- **Application Guidelines（実装上の提案）** 👈
+This document elaborates on application guidlines.
 
 # 機能
 レポジトリをもとにしたアカデミックメカニズムをアプリケーションに実装すると、大きくは
