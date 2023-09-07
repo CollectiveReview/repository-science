@@ -1,5 +1,5 @@
 /* eslint-env browser */
-
+import { IndexeddbPersistence } from 'y-indexeddb'
 import * as Y from 'yjs'
 import { WebsocketProvider } from 'y-websocket'
 import { ySyncPlugin, yCursorPlugin, yUndoPlugin, undo, redo } from 'y-prosemirror'
@@ -11,6 +11,8 @@ import { keymap } from 'prosemirror-keymap'
 
 window.addEventListener('load', () => {
   const ydoc = new Y.Doc()
+  const roomName = 'my-room-name'
+  const persistence = new IndexeddbPersistence(roomName, ydoc)
   const provider = new WebsocketProvider('ws://localhost:8080', 'prosemirror-demo', ydoc)
   const yXmlFragment = ydoc.getXmlFragment('prosemirror')
 
