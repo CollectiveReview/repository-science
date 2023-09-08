@@ -9,12 +9,11 @@ import { schema } from './schema.js'
 import { exampleSetup } from 'prosemirror-example-setup'
 import { keymap } from 'prosemirror-keymap'
 
-let docNum = 0;
 window.addEventListener('load', () => {
   const ydoc = new Y.Doc()
   const roomName = 'my-room-name'
   const persistence = new IndexeddbPersistence(roomName, ydoc)
-  const provider = new WebsocketProvider('ws://test-6pvnca4zhq-an.a.run.app/', 'prosemirror-demo', ydoc)
+  const provider = new WebsocketProvider('ws://test-6pvnca4zhq-an.a.run.app/', roomName, ydoc)
   const yXmlFragment = ydoc.getXmlFragment('prosemirror')
 
   const editor = document.createElement('div')
@@ -37,18 +36,7 @@ window.addEventListener('load', () => {
     })
   })
   document.body.insertBefore(editorContainer, null)
-
-  const switchDocBtn = /** @type {HTMLElement} */ (document.getElementById('switch-doc-btn'))
   const connectBtn = /** @type {HTMLElement} */ (document.getElementById('y-connect-btn'))
-  switchDocBtn.addEventListener('click', () => {
-    if (docNum == 0) {
-      docNum = 1
-      switchDocBtn.textContent = 'DocNum: 1'
-    } else {
-      docNum = 0
-      switchDocBtn.textContent = 'DocNum: 0'
-    }
-  })
   connectBtn.addEventListener('click', () => {
     if (provider.shouldConnect) {
       provider.disconnect()
@@ -61,4 +49,22 @@ window.addEventListener('load', () => {
 
   // @ts-ignore
   window.example = { provider, ydoc, yXmlFragment, prosemirrorView }
+})
+
+// Save the state to the database every 5 minutes
+setInterval(async () => {
+  await fetch(`/saveDocument/${roomName}`, {
+    method: 'POST',
+    body: JSON.stringify(Y.encodeStateAsUpdate(ydoc)),
+    headers: { 'Content-Type': 'application/json' }
+  })
+}, 300000) // 300000 milliseconds = 5 minutes
+
+// Save the state to the database when the page is about to be unloaded
+window.addEventListener('beforeunload', async () => {
+  await fetch(`/saveDocument/${roomName}`, {
+    method: 'POST',
+    body: JSON.stringify(Y.encodeStateAsUpdate(ydoc)),
+    headers: { 'Content-Type': 'application/json' }
+  })
 })
