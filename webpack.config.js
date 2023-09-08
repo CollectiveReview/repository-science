@@ -4,7 +4,8 @@ module.exports = {
   mode: 'development',
   devtool: 'source-map',
   entry: {
-    prosemirror: './prosemirror.js'
+    prosemirror: './prosemirror.js',
+    prosemirror_copy: './prosemirror-oth.js'
   },
   output: {
     globalObject: 'self',
